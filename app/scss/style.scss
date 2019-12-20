@@ -29,12 +29,13 @@ li {
 }
 
 header {
+    padding-top: 50px;
     background-color: #87509c;
-
+    color: $white;
 }
 
 .header__menu {
-    padding-top: 50px;
+
     display: flex;
     justify-content: space-between;
 
@@ -67,12 +68,12 @@ header {
 }
 
 .header__content {
-    
-    
+
+
     padding: 140px 95px;
 
     p {
-        color: $white;
+
         font-size: 42px;
         text-align: center;
         font-weight: 600;
@@ -81,17 +82,177 @@ header {
     }
 
     a {
-       display: block;
+        display: block;
         width: 295px;
         color: $white;
         font-size: 18px;
         line-height: 26px;
-        margin: 60px auto 0px ;
+        margin: 60px auto 0px;
         background-color: #eb7d4b;
-        padding:25px 0px;
+        padding: 25px 0px;
         text-align: center;
-        
+
 
     }
- 
+
+}
+
+.services {
+    background-color: #17c2a4;
+    padding-top: 115px;
+    color: $white;
+}
+
+.services__top,
+.team__top {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .services__title,
+    .team__title {
+        font-size: 40px;
+        line-height: 30px;
+        letter-spacing: .1px;
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+
+    .services__text,
+    .team__text {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 28px 0px 80px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            border: 4px solid #14a58c;
+            width: 88px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+        }
+
+    }
+}
+
+.services__items,
+.team__items {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 125px;
+
+    .team__item-foto {
+        width: 200px;
+        height: 200px;
+        background-color: #878787;
+        border-radius: 50%;
+        display: inline-block;
+        ;
+    }
+
+    .services__item,
+    .team__item {
+        max-width: 260px;
+        text-align: center;
+
+
+
+
+        .services__item-title,
+        .team__item-title {
+            text-transform: uppercase;
+            padding-top: 60px;
+            font-size: 24px;
+            line-height: 18px;
+            font-weight: 500;
+        }
+
+        .team__item-position {
+            padding-top: 15px;
+            color: #30bae7
+        }
+
+        .services__item-text,
+        .team__item-text {
+            font-size: 16px;
+            line-height: 24px;
+            padding: 25px 30px 0px;
+            height: 185px;
+        }
+
+        .team__item_social {
+            display: flex;
+            justify-content: center;
+
+            div {
+                margin: 0px 6px;
+                height: 35px;
+                width: 35px;
+                background-color: #bdd1df;
+                border-radius: 50%;
+               
+                &:hover{
+                    background-color: #17c2a4;;
+                }
+            }
+
+            .team__item_social-facebook,
+            .team__item_social-twetter,
+            .team__item_social-in,
+            .team__item_social-mail {
+                position: relative;
+                &:before {
+                    position: absolute;
+                    content: '';
+                    background-image: url(../img/socia_facebook.png);
+                    background-repeat: no-repeat;
+                    height: 35px;
+                    width: 35px;
+                    top:-10px;
+                    top: -9px;
+                    left: -13px;
+                }
+            }
+
+            .team__item_social-twetter {
+                &:before {
+                    background-image: url(../img/social_twitter.png);
+                }
+            }
+
+            .team__item_social-in {
+                &:before {
+                    background-image: url(../img/social_lin.png);
+                }
+            }
+
+            .team__item_social-mail {
+                &:before {
+                    background-image: url(../img/social_mail.png);
+                }
+            }
+        }
+    }
+
+    .services__item+.services__item,
+    .team__item+.team__item {
+        padding-left: 20px;
+
+    }
+
+}
+
+.team {
+    background-color: #e7f1f8;
+    padding-top: 115px;
+    color: $black;
+
+    .team__text:before {
+        border-color: #c8d9e5;
+
+    }
 }
