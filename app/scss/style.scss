@@ -104,14 +104,16 @@ header {
 }
 
 .services__top,
-.team__top {
+.team__top,
+.skills__top {
     max-width: 650px;
     text-align: center;
     margin: 0 auto;
 
 
     .services__title,
-    .team__title {
+    .team__title,
+    .skills__title {
         font-size: 40px;
         line-height: 30px;
         letter-spacing: .1px;
@@ -120,7 +122,8 @@ header {
     }
 
     .services__text,
-    .team__text {
+    .team__text,
+    .skills__text {
         font-size: 18px;
         line-height: 26px;
         padding: 28px 0px 80px;
@@ -253,6 +256,17 @@ header {
 
     .team__text:before {
         border-color: #c8d9e5;
+
+    }
+}
+
+.skills {
+    background-color: #fff;
+    padding-top: 115px;
+    color: $black;
+
+    .team__text:before {
+        border-color: #dfe8ed;
 
     }
 }
