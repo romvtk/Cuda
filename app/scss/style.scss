@@ -104,14 +104,16 @@ header {
 }
 
 .services__top,
-.team__top {
+.team__top,
+.skills__top {
     max-width: 650px;
     text-align: center;
     margin: 0 auto;
 
 
     .services__title,
-    .team__title {
+    .team__title,
+    .skills__title {
         font-size: 40px;
         line-height: 30px;
         letter-spacing: .1px;
@@ -120,7 +122,8 @@ header {
     }
 
     .services__text,
-    .team__text {
+    .team__text,
+    .skills__text {
         font-size: 18px;
         line-height: 26px;
         padding: 28px 0px 80px;
@@ -139,11 +142,15 @@ header {
     }
 }
 
+
+
 .services__items,
 .team__items {
     display: flex;
     justify-content: space-between;
     padding-bottom: 125px;
+
+
 
     .team__item-foto {
         width: 200px;
@@ -151,16 +158,15 @@ header {
         background-color: #878787;
         border-radius: 50%;
         display: inline-block;
-        ;
     }
 
+
+
     .services__item,
-    .team__item {
+    .team__item,
+    .skills__item {
         max-width: 260px;
         text-align: center;
-
-
-
 
         .services__item-title,
         .team__item-title {
@@ -170,6 +176,7 @@ header {
             line-height: 18px;
             font-weight: 500;
         }
+
 
         .team__item-position {
             padding-top: 15px;
@@ -194,9 +201,10 @@ header {
                 width: 35px;
                 background-color: #bdd1df;
                 border-radius: 50%;
-               
-                &:hover{
-                    background-color: #17c2a4;;
+
+                &:hover {
+                    background-color: #17c2a4;
+                    ;
                 }
             }
 
@@ -205,6 +213,7 @@ header {
             .team__item_social-in,
             .team__item_social-mail {
                 position: relative;
+
                 &:before {
                     position: absolute;
                     content: '';
@@ -212,7 +221,7 @@ header {
                     background-repeat: no-repeat;
                     height: 35px;
                     width: 35px;
-                    top:-10px;
+                    top: -10px;
                     top: -9px;
                     left: -13px;
                 }
@@ -254,5 +263,43 @@ header {
     .team__text:before {
         border-color: #c8d9e5;
 
+    }
+}
+
+.skills {
+    background-color: #fff;
+    padding-top: 115px;
+    color: $black;
+
+    .skills__text:before {
+        border-color: #dfe8ed;
+
+    }
+
+    .skills__items {
+        display: flex;
+        padding-bottom: 125px;
+
+        .skills__item {
+           
+            max-width: 260px;
+            width: 100%;
+           
+            text-align: center;
+
+            .skills__item-title {
+               
+                text-transform: uppercase;
+                padding-top: 60px ;
+                font-size: 24px ;
+                line-height: 18px ;
+                font-weight: 500 ;
+                
+            }
+        }
+
+        .skills__item+.skills__item {
+            margin-left: 20px;
+        }
     }
 }
