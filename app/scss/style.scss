@@ -106,7 +106,8 @@ header {
 .services__top,
 .team__top,
 .skills__top,
-.portfolio__top {
+.portfolio__top,
+.about__top {
     max-width: 650px;
     text-align: center;
     margin: 0 auto;
@@ -115,7 +116,8 @@ header {
     .services__title,
     .team__title,
     .skills__title,
-    .portfolio__title {
+    .portfolio__title,
+    .about__title {
         font-size: 40px;
         line-height: 30px;
         letter-spacing: .1px;
@@ -126,7 +128,8 @@ header {
     .services__text,
     .team__text,
     .skills__text,
-    .portfolio__text {
+    .portfolio__text,
+    .about__text {
         font-size: 18px;
         line-height: 26px;
         padding: 28px 0px 80px;
@@ -135,7 +138,7 @@ header {
         &:before {
             content: '';
             position: absolute;
-            border: 4px solid #14a58c;
+            border: 2px solid #14a58c;
             width: 88px;
             left: 50%;
             transform: translateX(-50%);
@@ -284,20 +287,20 @@ header {
         padding-bottom: 125px;
 
         .skills__item {
-           
+
             max-width: 260px;
             width: 100%;
-           
+
             text-align: center;
 
             .skills__item-title {
-               
+
                 text-transform: uppercase;
-                padding-top: 60px ;
-                font-size: 24px ;
-                line-height: 18px ;
-                font-weight: 500 ;
-                
+                padding-top: 60px;
+                font-size: 24px;
+                line-height: 18px;
+                font-weight: 500;
+
             }
         }
 
@@ -308,32 +311,36 @@ header {
 }
 
 
-.portfolio{
+.portfolio {
     background-color: #ffdd99;
     padding: 115px 0px;
     color: $black;
-    .portfolio__text:before{
+
+    .portfolio__text:before {
         border-color: #e5c37f;
     }
-    .portfolio__btn{
-background-color:#17c2a4;
-border-bottom: 4px solid #14a58c;
-color: $white;
-margin: 0 auto;
-width: 295px;
-text-align: center;
-padding: 28px 55px;
+
+    .portfolio__btn {
+        background-color: #17c2a4;
+        border-bottom: 4px solid #14a58c;
+        color: $white;
+        margin: 0 auto;
+        width: 295px;
+        text-align: center;
+        padding: 28px 55px;
     }
 }
 
 
-.portfolio__items  {
+.portfolio__items {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    .portfolio__item{
+
+    .portfolio__item {
         padding-bottom: 60px;
-        .portfolio__item-title{
+
+        .portfolio__item-title {
             text-align: center;
             text-transform: uppercase;
             font-size: 18px;
@@ -342,6 +349,62 @@ padding: 28px 55px;
     }
 }
 
-.ft-contents{
+.ft-contents {
     max-width: 1100px;
+}
+
+.about {
+    background-color: #d74680;
+    padding-top: 115px;
+    color: $white;
+
+    .about__text::before {
+        border-color: #b73c6d;
+    }
+
+    .about__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     
+
+        .about__item {
+            max-width: 540px;
+            padding-bottom:140px ;
+
+            .about__item-left {
+                height: 100px;
+                width: 100px;
+                background-color: #787878;
+                border-radius: 50%;
+                float: left;
+            }
+
+            .about__item-right {
+                padding-left: 150px;
+
+                .about__item-text {
+                    font-size: 21px;
+                    line-height: 31px;
+                    padding-bottom: 25px;
+                }
+
+                .about__item-name {
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    line-height: 26px;
+                    padding-bottom: 10px;
+
+                }
+
+                .about__item-position {
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #ffdd99;
+                }
+            }
+        }
+    }
+
+
 }
