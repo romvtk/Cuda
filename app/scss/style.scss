@@ -107,7 +107,8 @@ header {
 .team__top,
 .skills__top,
 .portfolio__top,
-.about__top {
+.about__top,
+.messager__top {
     max-width: 650px;
     text-align: center;
     margin: 0 auto;
@@ -117,7 +118,8 @@ header {
     .team__title,
     .skills__title,
     .portfolio__title,
-    .about__title {
+    .about__title,
+    .messager__title {
         font-size: 40px;
         line-height: 30px;
         letter-spacing: .1px;
@@ -129,7 +131,8 @@ header {
     .team__text,
     .skills__text,
     .portfolio__text,
-    .about__text {
+    .about__text,
+    .messager__text {
         font-size: 18px;
         line-height: 26px;
         padding: 28px 0px 80px;
@@ -366,11 +369,11 @@ header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-     
+
 
         .about__item {
             max-width: 540px;
-            padding-bottom:140px ;
+            padding-bottom: 140px;
 
             .about__item-left {
                 height: 100px;
@@ -407,4 +410,73 @@ header {
     }
 
 
+}
+
+.messager {
+    padding-top: 115px;
+    background-color: #3c5499;
+    color: $white;
+    padding-bottom: 150px;
+   
+
+    .messager__text::before {
+        border-color: #273a71;
+    }
+
+    .messager__box {
+        max-width: 860px;
+        text-align: center;
+        margin: 0 auto;
+  .messager__btn{
+    background-color:#30bae7;
+    border-bottom: 4px solid #299ec5;
+    border-radius: 8px;
+    color: $white;
+    margin: 60px auto 0px;
+    width: 295px;
+    text-align: center;
+    padding: 28px 85px;
+  }
+
+    }
+
+    .message_box-inner {
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+
+    input {
+        max-width: 410px;
+        width: 100%;
+        padding: 20px 24px;
+        background-color: #273a71;
+        outline: none;
+        font-size: 18px;
+        color: $white;
+        border-radius: 8px ;
+        border: 1px solid #273a71;
+        &::placeholder{
+            color: $white;
+        }
+
+    }
+
+    textarea {
+        margin-top: 27px;
+        height: 200px;
+        resize: none;
+        width: 100%;
+        background-color: #273a71;
+        border: 1px solid #273a71;
+        border-radius: 8px ;
+        font-size: 18px;
+        padding:25px 22px ;
+        &::placeholder{
+            color: $white;
+        }
+
+    }
 }
