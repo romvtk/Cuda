@@ -366,11 +366,11 @@ header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-     
+
 
         .about__item {
             max-width: 540px;
-            padding-bottom:140px ;
+            padding-bottom: 140px;
 
             .about__item-left {
                 height: 100px;
@@ -405,6 +405,20 @@ header {
             }
         }
     }
+}
 
-
+.footer{
+    background-color: #344b8e;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 45px;
+        color: $white;
+        font-size: 24px;
+        line-height: 30px;
+        li:hover{
+            color: #30bae7;
+            cursor: pointer;
+        }
+    }
 }
