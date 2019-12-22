@@ -1,0 +1,201 @@
+@media (max-width:1140px) {
+    .portfolio__items .portfolio__item{
+        margin: 0 auto;
+    }
+
+    .about .about__items .about__item{
+        max-width: 49%!important;
+    }
+}
+
+@media (max-width:1024px) {
+    .team__top .team__text {
+        padding-bottom: 25px !important;
+
+    }
+
+    .team__items {
+        flex-wrap: wrap !important;
+    }
+
+    .team__item {
+        max-width: 50% !important;
+        margin-top: 45px !important;
+    }
+
+    .team__items .team__item .team__item-title {
+        padding-top: 20px !important;
+    }
+
+    .team__items .team__item .team__item-text {
+        height: 140px !important;
+    }
+
+    .team__item+.team__item {
+        padding-left: 0px !important;
+    }
+
+    .skills{
+         padding-top: 50px!important;
+    }
+    .skills .skills__items{
+        flex-wrap: wrap!important;
+    }
+    .skills .skills__item{
+        max-width: 50%!important;
+    }
+
+    .skills .skills__items .skills__item + .skills__item{
+        margin-left:0px!important ;
+    }
+    .skills .skills__items .skills__item .skills__item-title{
+        padding:10px 0px 60px 0px!important;
+    }
+    .about .about__items .about__item .about__item-right{
+        padding-left: 115px!important;
+    }
+}
+
+@media (max-width:900px) {
+    .services {
+        padding-top: 50px !important;
+    }
+
+    .header__content {
+        padding: 50px 25px !important;
+    }
+
+    .services__text {
+        padding-bottom: 35px !important;
+    }
+
+    .services__items {
+        flex-wrap: wrap;
+    }
+
+    .services__item {
+        max-width: 50% !important;
+    }
+
+
+
+    .services__item-title {
+        padding-top: 30px !important;
+    }
+
+    .services__item-text {
+        padding: 15px 0px 0px !important;
+        height: 110px !important;
+    }
+
+    .services__items,
+    .team__items {
+        padding-bottom: 20px !important;
+    }
+
+    .messager input{
+        max-width: 100%!important;
+        margin-top: 20px!important;
+    }
+    .footer ul{
+        flex-wrap: wrap!important;
+        padding: 10px 0px!important;
+    }
+    .footer ul li {
+        padding: 10px;
+    }
+
+    .messager{
+        padding-bottom: 40px!important;
+    }
+}
+
+@media (max-width:700px) {
+    .services__item+.services__item {
+        padding-left: 0px !important;
+    }
+
+    .header__btn-menu {
+        display: block !important;
+        float: right;
+        font-size: 30px;
+    }
+
+    .menu ul {
+        display: none;
+        position: absolute;
+        top: 90px;
+        right: 45px;
+    }
+
+    .menu li {
+        display: block !important;
+        text-align: center !important;
+        background-color: #643a79 !important;
+    }
+
+    .header__menu li+li {
+        margin-left: 0 !important;
+    }
+
+    .header__menu li {
+        margin-bottom: 10px !important;
+    }
+
+    .team .team__items .team__item {
+        max-width: 100% !important;
+    }
+
+    .team__items .team__item .team__item-text{
+        height: auto!important;
+        padding-bottom: 10px!important;
+    }
+
+    .team__top .team__title{
+        line-height: 40px!important;;
+    }
+
+    .portfolio__item img {
+        max-width: 100%;
+    }
+    .about .about__items .about__item{
+        max-width: 100%!important;
+    }
+    .about .about__items .about__item{
+        padding-bottom: 55px!important;
+    }
+    .about__title{
+        line-height: 40px!important;
+    }
+}
+
+@media (max-width:500px) {
+    .services__title {
+        line-height: 40px !important;
+    }
+
+    .header__content {
+        padding: 10px 0px !important;
+    }
+
+    .header__content p {
+        font-size: 30px !important;
+        line-height: 35px !important;
+
+    }
+
+    .services__item {
+        margin: 0 auto !important;
+        max-width: 85% !important;
+    }
+
+    .skills .skills__item{
+        max-width: 100%!important;
+    }
+   .portfolio__btn{
+margin-top: 20px!important;
+    }
+    .header__content a{
+        margin: 35px auto 20px!important;
+    }
+}

@@ -16,7 +16,7 @@
 	background-color: #ebc985;
 	padding: 10px 20px;
 	top: -40px;
-	left: 30%;
+	
 	margin-left: 15px;
 	width: 85px;
 	border-radius: 10%;
@@ -59,7 +59,7 @@
 	color: #222;
 	text-decoration: none;
 	border: 1px solid transparent;
-	background-color: #fafafa;
+	background-color: #17c2a4;
 	padding: 10px 15px;
 	margin: 3px 0;
 }
@@ -67,12 +67,12 @@
 .ft-theme-default.ft-accordion > .ft-contents > .ft-tab.active, .ft-theme-default.ft-accordion > .ft-contents > .ft-tab:hover {
 	color: #222;
 	text-decoration: none;
-	background-color: #f2f2f2;
+	background-color: #17c2a4;
 }
 
 .ft-theme-default.ft-accordion > .ft-contents > .ft-content {
 	padding: 10px 15px;
-	background-color: #fff;
+	background-color: transparent;
 }
 
 .ft-theme-default.ft-accordion > .ft-contents > .ft-tab-icon .ft-icon > svg {

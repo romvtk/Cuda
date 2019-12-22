@@ -9,6 +9,10 @@
 
 @charset "UTF-8";
 /* Режим: Tabs */
+
+.ft-nav{
+	text-align: center;
+}
 .ft-tabs > .ft-nav > .ft-tab {
 	display: inline-block;
 	cursor: pointer;
